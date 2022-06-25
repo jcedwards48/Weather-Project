@@ -1,2 +1,3 @@
 # Weather-Project
-Created with CodeSandbox
+Created with CodeSandbox -
+This is the final project for SheCodes Plus workshop

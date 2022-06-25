@@ -94,13 +94,6 @@ function showTemperature(response) {
   h2.innerHTML = message;
 }
 
-//Add a Current Location button. When clicking on it, it uses the Geolocation API to get your GPS
-// coordinates and display and the city and current temperature using the OpenWeather API.
-
-//Developer logic: Click "current location button" first to initiative the navigator to get the latitude and longitude.
-//Then call for axios to use the latitude and longitude soordinates to get the current location and the temperature.
-//Change the h1 to reflect the current location name and temperature.
-
 function getPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;

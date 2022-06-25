@@ -1,0 +1,114 @@
+h1 {
+  font-family: Exo 2;
+  font-size: 50px;
+  color: rgb(85, 29, 138);
+}
+
+h2 {
+  font-size: 40px;
+  text-align: left;
+  color: blue 
+  font-style: italic;
+}
+
+h3 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(119, 16, 16);
+}
+
+.sun-icon {
+  color: rgb(250, 250, 8);
+  font-size: 50px;
+}
+
+.partly-icon {
+  color: rgb(133, 112, 112);
+  font-size: 50px;
+}
+
+.thunder {
+  color: black;
+  font-size: 50px;
+}
+
+.rain {
+  color: blue;
+  font-size: 50px;
+}
+
+.cloud {
+  font-size: 50px;
+  color: gray;
+}
+
+#date {
+  font-size: 25px;
+}
+
+#search-text-input {
+  font-size: 15px;
+}
+
+#current-temp {
+  font-size: 30px;
+  font-weight: bold;
+  color: brown;
+}
+
+#fahr-temp {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(137, 19, 19);
+}
+
+#celsius-temp {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(63, 132, 56);
+}
+
+#fahrenheit {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(137, 19, 19);
+}
+
+#celsius {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(63, 132, 56);
+}
+
+#hi-lo {
+  font-size: 20px;
+  color: black;
+}
+
+#atmosphere {
+  font-size: 35px;
+  color: rgb(137, 19, 19);
+  font-weight: bold;
+}
+
+#degrees {
+  font-size: 35px;
+}
+
+#input-text {
+  padding 10px 20px
+}

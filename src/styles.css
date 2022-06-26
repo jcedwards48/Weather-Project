@@ -28,9 +28,14 @@ h5 {
   font-size: 25px;
 }
 
-li (
+li {
   list-style: none;
-)
+  text-transform: capitalize;
+}
+
+p {
+  text-transform: capitalize;
+}
 
 button {
   display: block;

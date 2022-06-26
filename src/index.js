@@ -88,8 +88,10 @@ celsiusLink.addEventListener("click", convertToCelsius);
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
+  let degreeElement = document.querySelector("#degrees");
+  degreeElement.innerHTML = temperature;
   let city = response.data.name;
-  let message = `It is ${temperature} degrees in ${city}`;
+  let message = `${city}`;
   let iconElement = document.querySelector("#icon");
   let h2 = document.querySelector("h2");
   h2.innerHTML = message;
@@ -97,6 +99,12 @@ function showTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.main.humidity;
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = Math.round(response.data.wind.speed);
+  let description = document.querySelector("#atmosphere");
+  description.innerHTML = response.data.weather[0].description;
 }
 
 function getPosition(position) {

@@ -92,7 +92,7 @@ function showTemperature(response) {
   degreeElement.innerHTML = temperature;
   let city = response.data.name;
   let message = `${city}`;
-  let iconElement = document.querySelector("#icon");
+  let iconElement = document.querySelector("#icon-1");
   let h2 = document.querySelector("h2");
   h2.innerHTML = message;
   iconElement.setAttribute(

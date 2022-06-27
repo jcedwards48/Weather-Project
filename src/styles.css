@@ -1,5 +1,5 @@
 .weather-app{
-  max-width: 300px;
+  max-width: 600px;
   margin: 30px auto;
   padding: 20px;
   border: 2px solid black;
@@ -15,8 +15,8 @@ h1 {
 h2 {
   font-size: 40px;
   text-align: left;
-  color: blue 
-  font-style: italic;
+  color: rgb(109, 21, 21)
+  
 }
 
 h3 {

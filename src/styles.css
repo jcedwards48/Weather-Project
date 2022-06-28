@@ -128,3 +128,9 @@ button {
 #input-text {
   padding: 10px 20px;
 }
+
+#footnote {
+  display: inline;
+  margin: 0 auto;
+  text-align: right;
+}

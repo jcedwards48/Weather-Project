@@ -68,15 +68,16 @@ searchForm.addEventListener("submit", search);
 function convertToFahrenheit(event) {
   event.preventDefault();
   let degrees = document.querySelector("#degrees");
-  degrees.innerHTML = 90;
+  let fahr-temp = (14*9)/5+32;
+  let temperatureElement = document.querySelector("#degrees");
+  temperatureElement.innerHTML = Math.round(fahr-temp);
 }
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 function convertToCelsius(event) {
   event.preventDefault();
-  let degrees = document.querySelector("#degrees");
-  degrees.innerHTML = 66;
+  
 }
 
 let celsiusLink = document.querySelector("#celsius");

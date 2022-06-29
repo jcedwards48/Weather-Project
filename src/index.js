@@ -68,17 +68,25 @@ searchForm.addEventListener("submit", search);
 function convertToFahrenheit(event) {
   event.preventDefault();
   let degrees = document.querySelector("#degrees");
-  let fahr-temp = (14*9)/5+32;
+  let fahrTemp = (celsiusTemperature * 9) / 5 + 32;
+
   let temperatureElement = document.querySelector("#degrees");
-  temperatureElement.innerHTML = Math.round(fahr-temp);
+  temperatureElement.innerHTML = Math.round(fahrTemp);
 }
+
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 function convertToCelsius(event) {
   event.preventDefault();
-  
+  let temperatureElement = document.querySelector("degrees");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+let celsiusTemperature = null;
+
+let cityInput = document.querySelector("#input-text");
+searchCity(cityInput.value);
 
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertToCelsius);
@@ -88,6 +96,8 @@ celsiusLink.addEventListener("click", convertToCelsius);
 // result page and the current temperature of the city.
 
 function showTemperature(response) {
+  celsiusTemperature = response.data.main.temp;
+
   let temperature = Math.round(response.data.main.temp);
   let degreeElement = document.querySelector("#degrees");
   degreeElement.innerHTML = temperature;

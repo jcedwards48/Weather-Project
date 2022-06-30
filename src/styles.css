@@ -36,9 +36,10 @@ p {
   text-transform: capitalize;
 }
 
-button {
+.button {
   display: block;
   margin: 0 auto;
+  font-size: 10px;
 }
 
 .label {
@@ -48,8 +49,8 @@ button {
 }
 
 .weather-forecast {
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 40px;
+  text-align: left;
 }
 .weather-forecast-date {
   font-size: 16px;

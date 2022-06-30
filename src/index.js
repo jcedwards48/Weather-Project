@@ -79,11 +79,9 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 function convertToCelsius(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("degrees");
+  let temperatureElement = document.querySelector("#degrees");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
-
-let celsiusTemperature = null;
 
 let cityInput = document.querySelector("#input-text");
 searchCity(cityInput.value);
@@ -91,9 +89,31 @@ searchCity(cityInput.value);
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-//Week 5 Homework - In your project, when a user searches for a city
-// (example: New York), it should display the name of the city on the
-// result page and the current temperature of the city.
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement = `<div class="row">
+<div class="col">
+  <div class="weather-forecast-date">
+  Thu
+  <img src="https://openweathermap.org/img/wn/10d@2x.png"
+  alt=""
+  width="50"
+  />
+  <div class="weather-forecast-temperatures">
+    <span class="weather-forecast-temperature-max">
+    18° 
+    </span>
+    <span class="weather-forecast-temperature-min">
+    12°
+    </span>
+</div>
+</div> 
+</div>
+</div>
+</div> 
+`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function showTemperature(response) {
   celsiusTemperature = response.data.main.temp;
@@ -132,3 +152,5 @@ function retrievePosition(event) {
 
 let buttonClick = document.querySelector("button");
 buttonClick.addEventListener("click", retrievePosition);
+
+let celsiusTemperature = null;
